@@ -84,6 +84,10 @@ interface TidyDoc extends Generated.TidyDocOption {
 
   // batch set/get of options
   options: Generated.OptionDict
+  // generic setter / getters
+  optGet(key: string): number | string | boolean
+  optSet(key: string, value: number | string | boolean): void
+
   // Methods that return TidyOption object
   getOptionList(): TidyOption[]
   getOption(option: TidyOption): TidyOption

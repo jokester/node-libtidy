@@ -230,7 +230,7 @@ TypeScript does not allow us to distinguish setter and getter in declaration.
   for (const o of options) {
     optAccessors.members.push(optGet(o));
 
-    optAccessors.members.push(optSet(o));
+    // optAccessors.members.push(optSet(o));
 
     optionDict.members.push(
       dom.create.property(

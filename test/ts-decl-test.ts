@@ -60,6 +60,9 @@ describe('index.d.ts', () => {
     // libtidy.TidyOption is not callable with () or new
     // libtidy.TidyOption();
     // new libtidy.TidyOption);
+
+    // Type 'string | number | boolean' is not assignable to type 'boolean'.
+    const markup: boolean = doc.optGet("markup");
   });
 });
 
