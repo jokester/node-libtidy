@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "install": "node-gyp rebuild",
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,7 @@
     "indent"
   ],
   "author": "Martin von Gagern <Martin.vGagern@gmx.net>",
-  "contributors":  [
+  "contributors": [
     "Raphael Ackermann <raphael.ackermann@gmail.com>"
   ],
   "license": "MIT",
@@ -41,7 +43,8 @@
   "dependencies": {
     "bindings": "^1.2.1",
     "nan": "^2.1.0",
-    "node-gyp": "^3.2.1"
+    "node-gyp": "^3.2.1",
+    "snyk": "^1.83.0"
   },
   "files": [
     "src/",
@@ -54,5 +57,6 @@
     "tidy-html5/README/",
     "tidy-html5/src/",
     "tidy-html5/include/"
-  ]
+  ],
+  "snyk": true
 }
